@@ -3,7 +3,6 @@ package com.tma.axiomsharing.terminaloperation;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Spliterator;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -46,5 +45,10 @@ public class ForEach {
         }
         // New way
         iterator.forEachRemaining(System.out::println);
+        int i = 10;
+        integers.forEach(s -> {
+            s++;
+            System.out.println(s);
+        });
     }
 }
