@@ -2,7 +2,7 @@ package com.tma.axiomsharing.lambda;
 
 import com.tma.axiomsharing.functionalinterface.IntegerConverter;
 
-public class Main {
+public class Lambda {
     public static void main(String[] args) {
 
         // ================ Java interface ================
@@ -27,6 +27,6 @@ public class Main {
         };
 
         // Use lambda
-        IntegerConverter integerConverterLambda = (s)    -> Integer.parseInt(s);
+        IntegerConverter integerConverterLambda = (s) -> Integer.parseInt(s);
     }
 }
