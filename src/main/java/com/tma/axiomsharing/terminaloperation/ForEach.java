@@ -3,6 +3,7 @@ package com.tma.axiomsharing.terminaloperation;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Spliterator;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -45,15 +46,5 @@ public class ForEach {
         }
         // New way
         iterator.forEachRemaining(System.out::println);
-
-//        Spliterator<Integer> spliterator = integers.spliterator();
-//        Spliterator<Integer> spliterator1 = spliterator.trySplit();
-//        Spliterator<Integer> spliterator2 = spliterator1.trySplit();
-//        Spliterator<Integer> spliterator3 = spliterator.trySplit();
-//        spliterator1.forEachRemaining(s -> System.out.print("Spliterator 1: " + s));
-//        System.out.println("\n");
-//        spliterator2.forEachRemaining(s -> System.out.print("Spliterator 2: " + s));
-//        System.out.println("\n");
-//        spliterator3.forEachRemaining(s -> System.out.print("Spliterator 3: " + s));
     }
 }
